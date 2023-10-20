@@ -6,37 +6,62 @@
     <title>Watch Landing Page - Ethan Klukkert</title>
     <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body>
+  <body class="font-heebo font-normal">
     <div id="special-offer">
       INTRODUCING THE PRX 35 IN ICE BLUE & GOLD.
       <a href="#">DISCOVER NOW</a>
     </div>
-    <header>
-      <a href="">BRAND</a>
-      <a href="">CUSTOMER SERVICE</a>
-      <img
-        src="./assets/img/tissot-black.svg"
-        title="Tissot"
-        alt="Tissot"
-        width="158"
-        height="20"
-      />
-      <input type="text" placeholder="SEARCH" />
-      <nav id="top-right-nav" aria-label="top-right-nav">
-        <a href="#">Find Stores</a>
+    <header class="fixed top-0 left-0 bg-white z-10 w-full justify-between">
+      <a href="">
+        <img
+          src="./assets/img/tissot-black.svg"
+          title="Tissot"
+          alt="Tissot"
+          class="absolute w-[158px] h-[20px] left-1/2 -translate-x-1/2 top-[25px]"
+      /></a>
 
-        <a href="#">Register Watch</a>
+      <div class="flex xl:flex-row h-[70px] items-center">
+        <a
+          href=""
+          class="pl-[28px] pr-[.5rem] py-[.8rem] tracking-[1px] text-[.85rem]"
+          >BRAND</a
+        >
+        <a
+          href=""
+          class="p-[.8rem] pl-[.5rem] mr-auto tracking-[1px] text-[.85rem]"
+          >CUSTOMER SERVICE</a
+        >
 
-        <a href="#">My Account</a>
+        <nav
+          id="top-right-nav"
+          aria-label="top-right-nav"
+          class="ml-auto pr-[30px] h-[38px] flex items-center"
+        >
+          <a
+            class="w-[200px] p-2 h-[38px] bg-[#f1f1f1] rounded-full cursor-pointer text-[.78rem] flex items-center"
+          >
+            SEARCH
+          </a>
+          <a href="#" class="ml-10 text-[.9rem]">Find Stores</a>
 
-        <a href="#">My Cart</a>
-      </nav>
-      <nav id="main-nav" aria-label="main-nav">
-        <a href="#">MEN</a>
-        <a href="#">WOMEN</a>
-        <a href="#">COLLECTION</a>
-        <a href="#">NEW</a>
-        <a href="#">STRAPS</a>
+          <a href="#" class="ml-10 text-[.9rem]">Register Watch</a>
+
+          <a href="#" class="ml-10 text-[.9rem]">My Account</a>
+
+          <a href="#" class="ml-10 text-[.9rem]">My Cart</a>
+        </nav>
+      </div>
+
+      <nav
+        id="main-nav"
+        aria-label="main-nav"
+        class="h-[50px] flex justify-center items-center"
+      >
+        <a href="#" class="p-2 text-[.85rem] tracking-[1px]">MEN</a>
+        <a href="#" class="p-2 text-[.85rem] tracking-[1px]">WOMEN</a>
+        <a href="#" class="p-2 text-[.85rem] tracking-[1px]">COLLECTION</a>
+        <a href="#" class="p-2 text-[.85rem] tracking-[1px]">NEW</a>
+        <a href="#" class="p-2 text-[.85rem] tracking-[1px]">STRAPS</a>
       </nav>
     </header>
     <main>
@@ -268,11 +293,7 @@
             >REGISTER NOW</a
           >
         </div>
-        <img
-          src="./assets/img/register-watch.avif"
-          alt=""
-          class="max-w-xl"
-        />
+        <img src="./assets/img/register-watch.avif" alt="" class="max-w-xl" />
       </section>
       <section id="register-watch" class="flex flex-row-reverse">
         <div class="">

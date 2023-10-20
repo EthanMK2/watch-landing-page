@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'heebo': ['Heebo', 'Roboto', 'Arial', 'Helvetica', 'san-serif']
+      }
+    },
   },
   plugins: [],
 }
