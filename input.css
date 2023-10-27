@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.underline-animation-red {
+  position: relative;
+  transition: color 0.3s ease-out;
+}
+
+.underline-animation-red::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.underline-animation-red:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline-animation-red:hover {
+  color: red;
+  transition: color 0.3s ease-out;
+}
+
+.underline-animation-white {
+  position: relative;
+  transition: color 0.3s ease-out;
+}
+
+.underline-animation-white::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-out;
+}
+
+.underline-animation-white:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline-animation-white:hover {
+  color: white;
+  transition: color 0.3s ease-out;
+}
+
+svg:hover {
+    fill: red;
+}
+
+path {
+    fill: red;
+}

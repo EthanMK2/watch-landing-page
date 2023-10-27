@@ -1,0 +1,12 @@
+<svg width="32mm" height="32mm" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-.1899 -.53804)">
+  <path d="m27.661 17.886a11.494 11.493 0 0 1-12 10.359 11.494 11.493 0 0 1-10.933-11.48" style="fill:none;stroke-width:2.012;stroke:#000"/>
+  <rect transform="matrix(.87797 .47871 -.48842 .87261 0 0)" x="11.61" y="11.923" width="6.432" height="1.5253" ry=".76264" style="stroke-width:0"/>
+  <rect transform="matrix(-.50197 .86489 -.85926 -.51154 0 0)" x="11.579" y="-13.195" width="6.432" height="1.5253" ry=".76264" style="stroke-width:0"/>
+ </g>
+ <g transform="rotate(181.67 16.093 15.967)">
+  <path d="m27.661 17.886a11.494 11.493 0 0 1-12 10.359 11.494 11.493 0 0 1-10.933-11.48" style="fill:none;stroke-width:2.012;stroke:#000"/>
+  <rect transform="matrix(.87797 .47871 -.48842 .87261 0 0)" x="11.61" y="11.923" width="6.432" height="1.5253" ry=".76264" style="stroke-width:0"/>
+  <rect transform="matrix(-.50197 .86489 -.85926 -.51154 0 0)" x="11.579" y="-13.195" width="6.432" height="1.5253" ry=".76264" style="stroke-width:0"/>
+ </g>
+</svg>
