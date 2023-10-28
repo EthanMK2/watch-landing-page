@@ -57,11 +57,3 @@
   color: white;
   transition: color 0.3s ease-out;
 }
-
-svg:hover {
-    fill: red;
-}
-
-path {
-    fill: red;
-}
