@@ -7,24 +7,36 @@
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body class="font-heebo font-normal">
-    <header id="header-el" class="fixed top-0 left-0 bg-white z-20 w-full justify-between transition-all duration-300">
+    <header
+      id="header-el"
+      class="fixed top-0 left-0 bg-white z-20 w-full justify-between transition-all duration-300"
+    >
       <a href="">
         <img
           src="./assets/img/tissot-black.svg"
           title="Tissot"
           alt="Tissot"
-          class="absolute w-[158px] h-[20px] left-1/2 -translate-x-1/2 top-[25px]"
+          class="absolute w-[118.5px] h-[15px] xl:w-[158px] xl:h-[20px] left-1/2 -translate-x-1/2 top-[25px]"
       /></a>
 
       <div class="flex xl:flex-row h-[70px] items-center ml-[28px]">
+        <button
+          id="mobile-menu-btn"
+          aria-label="Open Mobile Navigation"
+          class="flex xl:hidden flex-col justify-between h-4"
+        >
+          <div class="bg-black w-6 h-[2px]"></div>
+          <div class="bg-black w-6 h-[2px]"></div>
+          <div class="bg-black w-6 h-[2px]"></div>
+        </button>
         <a
           href=""
-          class="mr-[.5rem] my-[.8rem] tracking-[1px] text-[.85rem] underline-animation-red"
+          class="mr-[.5rem] my-[.8rem] tracking-[1px] text-[.85rem] underline-animation-red hidden xl:inline"
           >BRAND</a
         >
         <a
           href=""
-          class="my-[.8rem] ml-[.5rem] mr-auto tracking-[1px] text-[.85rem] underline-animation-red"
+          class="my-[.8rem] ml-[.5rem] mr-auto tracking-[1px] text-[.85rem] underline-animation-red hidden xl:inline"
           >CUSTOMER SERVICE</a
         >
 
@@ -34,11 +46,11 @@
           class="ml-auto pr-[30px] h-[38px] flex items-center"
         >
           <a
-            class="w-[200px] p-2 h-[38px] bg-[#f1f1f1] rounded-full cursor-pointer text-[.78rem] flex items-center"
+            class="w-[200px] p-2 h-[38px] bg-[#f1f1f1] rounded-full cursor-pointer text-[.78rem] hidden xl:flex items-center"
           >
             SEARCH
           </a>
-          <a href="#" class="ml-10 text-[.9rem] relative group"
+          <a href="#" class="ml-10 text-[.9rem] relative group hidden xl:inline"
             ><img
               src="assets/img/find_stores.svg"
               alt=""
@@ -50,7 +62,7 @@
             >
           </a>
 
-          <a href="#" class="ml-10 text-[.9rem] relative group"
+          <a href="#" class="ml-10 text-[.9rem] relative group hidden xl:inline"
             ><img
               src="assets/img/register_watch.svg"
               alt=""
@@ -61,11 +73,11 @@
             ></a
           >
 
-          <a href="#" class="ml-10 text-[.9rem] relative group"
+          <a href="#" class="ml-5 xl:ml-10 text-[.9rem] relative group"
             ><img
               src="assets/img/my_account.svg"
               alt=""
-              class="w-8 h-8 mx-auto"
+              class="w-6 h-6 xl:w-8 xl:h-8 mx-auto"
             />
             <span
               class="absolute w-24 -translate-x-1/2 text-right opacity-0 group-hover:opacity-100 text-red-600 transition-all duration-300 text-[0.65rem]"
@@ -73,8 +85,12 @@
             ></a
           >
 
-          <a href="#" class="ml-10 text-[.9rem] relative group"
-            ><img src="assets/img/my_cart.svg" alt="" class="w-8 h-8 mx-auto" />
+          <a href="#" class="ml-5 xl:ml-10 text-[.9rem] relative group"
+            ><img
+              src="assets/img/my_cart.svg"
+              alt=""
+              class="w-6 h-6 xl:w-8 xl:h-8 mx-auto"
+            />
             <span
               class="absolute w-[80px] -translate-x-1/2 text-right opacity-0 group-hover:opacity-100 text-red-600 transition-all duration-300 text-[0.65rem]"
               >MY CART</span
@@ -86,7 +102,7 @@
       <nav
         id="main-nav"
         aria-label="main-nav"
-        class="h-[50px] flex justify-center items-center"
+        class="h-[50px] hidden xl:flex justify-center items-center"
       >
         <a
           href="#"
@@ -117,6 +133,48 @@
       <div class="absolute w-full h-[1px] bottom-0 left-0 bg-gray-300"></div>
     </header>
     <main class="">
+      <nav
+        id="mobile-menu"
+        aria-label="Mobile Menu"
+        class="fixed flex flex-col pl-4 top-0 right-[100%] z-20 w-[100vw] h-[100vh] bg-white transition-all duration-300"
+      >
+        <button id="mobile-menu-close-btn" class="relative w-6 h-4 mx-6 mt-8">
+          <div
+            class="w-6 h-[2px] absolute top-0 left-0 bg-black -rotate-45"
+          ></div>
+          <div
+            class="w-6 h-[2px] absolute top-0 left-0 bg-black rotate-45"
+          ></div>
+        </button>
+        <hr class="my-4" />
+        <a href="" class="text-[24px] underline-animation-red ml-4 mb-4"> MEN </a>
+        <a href="" class="text-[24px] underline-animation-red ml-4 mb-4"> WOMEN </a>
+        <a href="" class="text-[24px] underline-animation-red ml-4 mb-4">
+          COLLECTION
+        </a>
+        <a href="" class="text-[24px] underline-animation-red ml-4 mb-4"> NEW </a>
+        <a href="" class="text-[24px] underline-animation-red ml-4 mb-4"> STRAPS </a>
+        <hr class="my-4" />
+        <a href="" class="flex text-[16px] underline-animation-red ml-4 mb-4">
+          <img
+            src="assets/img/find_stores.svg"
+            alt=""
+            class="w-[24px] h-[24px]"
+          />FIND STORES
+        </a>
+        <a href="" class="flex text-[16px] underline-animation-red ml-4">
+          <img
+            src="assets/img/register_watch.svg"
+            alt=""
+            class="w-[24px] h-[24px]"
+          />REGISTER WATCH
+        </a>
+        <hr class="my-4">
+        <a href="" class="text-[24px] underline-animation-red ml-4 mb-4"> BRAND </a>
+        <a href="" class="text-[24px] underline-animation-red ml-4 mb-4">
+          CUSTOMER SERVICE
+        </a>
+      </nav>
       <section
         id="intro-video-cta"
         class="relative max-w-screen max-h-fit mb-[40px]"
@@ -682,18 +740,30 @@
         <h1 class="text-[40px] font-light text-center mb-[35px]">
           TOP TRENDING
         </h1>
-        
+
         <div id="trending-list-div" class="relative my-16 overflow-hidden">
-          <button id="trending-left-button" class="bg-red-600 p-1 rounded-full absolute top-[40%] z-10 hover:scale-110 transition-all ml-2 w-8 h-8">
-            <img src="assets/img/left_arrow.svg" alt="" class="w-full h-full">
+          <button
+            id="trending-left-button"
+            class="bg-red-600 p-1 rounded-full absolute top-[40%] z-10 hover:scale-110 transition-all ml-2 w-8 h-8"
+          >
+            <img src="assets/img/left_arrow.svg" alt="" class="w-full h-full" />
           </button>
-          <button id="trending-right-button" class="bg-red-600 p-1 rounded-full absolute top-[40%] left-[100%] -translate-x-[120%] z-10 hover:scale-110 transition-all mr-2 w-8 h-8">
-            <img src="assets/img/right_arrow.svg" alt="" class="w-full h-full">
+          <button
+            id="trending-right-button"
+            class="bg-red-600 p-1 rounded-full absolute top-[40%] left-[100%] -translate-x-[120%] z-10 hover:scale-110 transition-all mr-2 w-8 h-8"
+          >
+            <img
+              src="assets/img/right_arrow.svg"
+              alt=""
+              class="w-full h-full"
+            />
           </button>
           <ul id="trending-list" class="flex flex-row transition-all">
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href="">
-                <div class="w-full overflow-hidden">
+                <div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-1.avif"
                     alt=""
@@ -717,9 +787,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-2.avif"
                     alt=""
@@ -743,9 +815,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-3.avif"
                     alt=""
@@ -769,9 +843,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-4.avif"
                     alt=""
@@ -795,9 +871,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-5.avif"
                     alt=""
@@ -821,9 +899,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-6.avif"
                     alt=""
@@ -847,9 +927,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-7.avif"
                     alt=""
@@ -873,9 +955,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-8.avif"
                     alt=""
@@ -899,9 +983,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-9.avif"
                     alt=""
@@ -925,9 +1011,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-10.avif"
                     alt=""
@@ -951,9 +1039,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-11.avif"
                     alt=""
@@ -977,9 +1067,11 @@
                 </p>
               </a>
             </li>
-            <li class="min-w-[24vw] mx-[20px] text-center group trending-watch">
+            <li
+              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+            >
               <a href=""
-                ><div class="w-full overflow-hidden">
+                ><div class="bg-slate-100 w-full overflow-hidden">
                   <img
                     src="./assets/img/trending/trending-12.avif"
                     alt=""

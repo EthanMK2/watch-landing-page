@@ -1,4 +1,4 @@
-// header logic
+/////////////////////////////// header logic
 window.onscroll = function () {
   headerScroll();
 };
@@ -26,7 +26,21 @@ function headerScroll() {
   }
 }
 
-// carousel logic
+////////////////////////////////// mobile menu logic
+
+const mobile_menu_button = document.getElementById("mobile-menu-btn");
+const mobile_menu_close_button = document.getElementById("mobile-menu-close-btn");
+const mobile_menu = document.getElementById("mobile-menu");
+
+mobile_menu_button.addEventListener("click", () => {
+  mobile_menu.style.right = "0";
+})
+
+mobile_menu_close_button.addEventListener("click", () => {
+  mobile_menu.style.right = "100%";
+})
+
+////////////////////////////////// carousel logic
 const left_button = document.getElementById("trending-left-button");
 const right_button = document.getElementById("trending-right-button");
 
@@ -46,11 +60,11 @@ left_button.addEventListener("click", () => {
   } else if (scroll_position > 1) {
     if (last_direction === "right") {
       scroll_position -= 1;
-      trending.style.transform = `translateX(-${27 * scroll_position}vw)`;
+      trending.style.transform = `translateX(calc(-${23.5 * scroll_position}vw))`;
       last_direction = "left";
     } else {
       scroll_position -= 1;
-      trending.style.transform = `translateX(-${27 * scroll_position}vw)`;
+      trending.style.transform = `translateX(calc(-${23.5 * scroll_position}vw))`;
       last_direction = "left";
     }
   }
@@ -71,14 +85,14 @@ left_button.addEventListener("click", () => {
 });
 
 right_button.addEventListener("click", () => {
-  if (scroll_position <= trending_list.length - num_desktop_displayed - 1) {
+  if (scroll_position < trending_list.length - num_desktop_displayed - 1) {
     if (last_direction === "left") {
       scroll_position += 1;
-      trending.style.transform = `translateX(-${27 * scroll_position}vw)`;
+      trending.style.transform = `translateX(calc(-${23.5 * scroll_position}vw))`;
       last_direction = "right";
     } else {
       scroll_position += 1;
-      trending.style.transform = `translateX(-${27 * scroll_position}vw)`;
+      trending.style.transform = `translateX(calc(-${23.5 * scroll_position}vw))`;
       last_direction = "right";
     }
   }
