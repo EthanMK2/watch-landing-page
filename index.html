@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Watch Landing Page - Ethan Klukkert</title>
     <link rel="stylesheet" href="./css/output.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/tissot_favicon.ico">
   </head>
   <body class="font-heebo font-normal">
     <header
@@ -183,26 +184,27 @@
           src="./assets/intro-video.webm"
           muted
           loop
-          class="w-full h-full"
+          autoplay
+          class="w-full h-full mt-5"
         ></video>
         <div
           id="intro-cta"
-          class="absolute left-0 bottom-0 ml-20 mb-56 w-[320px]"
+          class="absolute left-0 bottom-0 ml-4 mb-2 lg:ml-20 lg:mb-56 lg:w-[320px]"
         >
           <p class="text-white">TISSOT</p>
-          <p class="text-white text-[40px] font-light mb-[60px]">
+          <p class="text-white text-[20px] lg:text-[40px] font-light mb-1 sm:mb-[30px] lg:mb-[60px]">
             PRX COLLECTION
           </p>
           <a
             href="https://ethanklukkert.com/"
             target="_blank"
-            class="text-white rounded-full bg-red-600 block text-center py-4 text-sm tracking-[1px] hover:bg-gray-800 transition-colors duration-300"
+            class="text-white rounded-full bg-red-600 w-[160px] lg:w-full block text-center py-1 sm:py-4 text-sm tracking-[1px] hover:bg-gray-800 transition-colors duration-300"
             >DISCOVER</a
           >
         </div>
       </section>
-      <section id="first-offers" class="mx-[3vw] mb-[90px]">
-        <div id="first-offers-intro" class="relative w-full px-[20px]">
+      <section id="first-offers" class="mx-[1vw] sm:mx-[3vw] mb-[90px]">
+        <div id="first-offers-intro" class="relative w-full px-0 sm:px-[20px]">
           <img
             src="./assets/img/HP_Banner_IceBlue_Gold_V3.avif"
             alt="IceBlue Gold"
@@ -212,17 +214,17 @@
             id="first-offers-cta"
             class="absolute bottom-0 left-0 flex flex-col justify-center h-full w-1/2"
           >
-            <p class="text-white text-[40px] font-light text-center mb-[25px]">
+            <p class="text-white text-[15px] md:text-[30px] lg:text-[40px] font-light text-center mb-1 sm:mb-[25px]">
               PRX POWERMATIC 80 35MM
             </p>
             <a
               href="#"
-              class="text-white rounded-full bg-red-600 py-4 text-sm tracking-[1px] w-[320px] text-center mx-auto hover:bg-gray-800 transition-colors duration-300"
+              class="text-white rounded-full bg-red-600 py-1 sm:py-4 text-sm tracking-[1px] w-[160px] lg:w-[320px] text-center mx-auto hover:bg-gray-800 transition-colors duration-300"
               >DISCOVER</a
             >
           </div>
         </div>
-        <ul id="first-offers-list" class="flex flex-row px-[136px] mt-[60px]">
+        <ul id="first-offers-list" class="flex flex-col md:flex-row px-1 lg:px-[136px] mt-[60px]">
           <li class="mx-[20px] text-center group">
             <a href="">
               <div class="w-full overflow-hidden">
@@ -323,29 +325,29 @@
       </section>
       <section
         id="mens-watches"
-        class="flex flex-row justify-center mx-[3vw] mb-[90px]"
+        class="flex flex-col md:flex-row justify-center mx-[1vw] lg:mx-[3vw] mb-[90px]"
       >
         <div
           id="mens-watches-cta"
-          class="relative w-1/2 flex justify-center px-[20px]"
+          class="relative w-full md:w-1/2 flex justify-center px-0 lg:px-[20px]"
         >
           <img src="./assets/img/watches-for-him.avif" alt="" class="" />
           <div
             class="absolute top-0 left-1/2 -translate-x-1/2 pt-[50px] w-full text-center max-w-[650px]"
           >
-            <p class="text-white text-[40px] font-light mb-[25px] block">
+            <p class="text-white text-[20px] lg:text-[40px] font-light mb-[25px] block">
               WATCHES FOR HIM
             </p>
             <a
               href="#"
-              class="text-white rounded-full bg-red-600 text-center py-4 block mx-auto text-sm tracking-[1px] max-w-[340px] hover:bg-gray-800 transition-colors duration-300"
+              class="text-white rounded-full bg-red-600 text-center px-1 lg:px-0 py-1 lg:py-4 block mx-auto text-xs lg:text-sm tracking-[1px] max-w-fit lg:max-w-[340px] hover:bg-gray-800 transition-colors duration-300"
               >DISCOVER ALL MEN WATCHES</a
             >
           </div>
         </div>
-        <div id="mens-watches-div" class="w-1/2 pl-[45px]">
+        <div id="mens-watches-div" class="w-full md:w-1/2 pl-1 lg:pl-[45px]">
           <ul id="mens-watches-list" class="flex flex-wrap w-auto">
-            <div class="flex xl:flex-row">
+            <div class="flex flex-col sm:flex-row">
               <li class="mx-[20px] text-center group">
                 <a href="">
                   <div class="w-full overflow-hidden">
@@ -399,7 +401,7 @@
                 </a>
               </li>
             </div>
-            <div class="flex xl:flex-row">
+            <div class="flex flex-col sm:flex-row">
               <li class="mx-[20px] text-center group">
                 <a href="">
                   <img
@@ -454,29 +456,29 @@
       </section>
       <section
         id="womens-watches"
-        class="flex flex-row-reverse justify-center mx-[3vw] mb-[90px]"
+        class="flex flex-col md:flex-row-reverse justify-center mx-[1vw] lg:mx-[3vw] mb-[90px]"
       >
         <div
           id="womens-watches-cta"
-          class="relative w-1/2 flex justify-center px-[20px]"
+          class="relative w-full md:w-1/2 flex justify-center px-0 md:px-[20px]"
         >
           <img src="./assets/img/watches-for-her.avif" alt="" />
           <div
             class="absolute top-0 left-1/2 -translate-x-1/2 pt-[50px] w-full text-center max-w-[650px]"
           >
-            <p class="text-white text-[40px] font-light mb-[25px] block">
+            <p class="text-white text-[20px] lg:text-[40px] font-light mb-[25px] block">
               WATCHES FOR HER
             </p>
             <a
               href="#"
-              class="text-white rounded-full bg-red-600 text-center py-4 block mx-auto text-sm tracking-[1px] max-w-[340px] hover:bg-gray-800 transition-colors duration-300"
+              class="text-white rounded-full bg-red-600 text-center px-1 lg:px-0 py-1 lg:py-4 block mx-auto text-xs lg:text-sm tracking-[1px] max-w-fit lg:max-w-[340px] hover:bg-gray-800 transition-colors duration-300"
               >DISCOVER ALL WOMEN WATCHES</a
             >
           </div>
         </div>
-        <div id="womens-watches-div" class="w-1/2 pl-[45px]">
+        <div id="womens-watches-div" class="w-full md:w-1/2 pl-1 lg:pl-[45px]">
           <ul id="womens-watches-list" class="flex flex-wrap w-auto">
-            <div class="flex xl:flex-row">
+            <div class="flex flex-col sm:flex-row">
               <li class="mx-[20px] text-center group">
                 <a href="">
                   <div class="w-full overflow-hidden">
@@ -530,7 +532,7 @@
                 </a>
               </li>
             </div>
-            <div class="flex xl:flex-row">
+            <div class="flex flex-col sm:flex-row">
               <li class="mx-[20px] text-center group">
                 <a href="">
                   <div class="w-full overflow-hidden">
@@ -587,12 +589,12 @@
           </ul>
         </div>
       </section>
-      <section id="our-categories" class="px-[3vw]">
-        <h1 class="text-[40px] font-light text-center mb-[35px]">
+      <section id="our-categories" class="px-[1vw] lg:px-[3vw]">
+        <h1 class="text-[25px] sm:text-[40px] font-light text-center mb-[35px]">
           OUR CATEGORIES
         </h1>
-        <ul id="category-list" class="flex flex-row justify-center">
-          <li class="mr-[10px] w-[14%] group">
+        <ul id="category-list" class="flex flex-row sm:justify-center overflow-x-scroll sm:overflow-hidden">
+          <li class="mr-[10px] min-w-[50vw] sm:min-w-0 sm:max-w-[14%] group">
             <div class="overflow-hidden">
               <a href="">
                 <figure class="w-full">
@@ -610,7 +612,7 @@
               </a>
             </div>
           </li>
-          <li class="mr-[10px] w-[14%] group">
+          <li class="mr-[10px] min-w-[50vw] sm:min-w-0 sm:max-w-[14%] group">
             <div class="overflow-hidden">
               <a href="">
                 <figure>
@@ -627,7 +629,7 @@
               ></a>
             </div>
           </li>
-          <li class="mr-[10px] w-[14%] group">
+          <li class="mr-[10px] min-w-[50vw] sm:min-w-0 sm:max-w-[14%] group">
             <div class="overflow-hidden">
               <a href="">
                 <figure>
@@ -644,7 +646,7 @@
               ></a>
             </div>
           </li>
-          <li class="mr-[10px] w-[14%] group">
+          <li class="mr-[10px] min-w-[50vw] sm:min-w-0 sm:max-w-[14%] group">
             <div class="overflow-hidden">
               <a href="">
                 <figure>
@@ -661,7 +663,7 @@
               ></a>
             </div>
           </li>
-          <li class="mr-[10px] w-[14%] group">
+          <li class="mr-[10px] min-w-[50vw] sm:min-w-0 sm:max-w-[14%] group">
             <div class="overflow-hidden">
               <a href="">
                 <figure>
@@ -678,7 +680,7 @@
               ></a>
             </div>
           </li>
-          <li class="w-[14%] group">
+          <li class="min-w-[50vw] sm:min-w-0 sm:max-w-[14%] group">
             <div class="overflow-hidden">
               <a href="">
                 <figure>
@@ -699,9 +701,9 @@
       </section>
       <section
         id="register-watch"
-        class="flex flex-row px-[3vw] mt-48 mb-[90px]"
+        class="flex flex-col-reverse lg:flex-row px-[1vw] lg:px-[3vw] mt-48 mb-[90px]"
       >
-        <div class="w-1/2 self-center pr-[110px]">
+        <div class="w-full lg:w-1/2 self-center pr-3 lg:pr-[110px]">
           <h1 class="text-[36px] font-normal">REGISTER MY WATCH</h1>
           <p class="text-lg font-light mt-4 text-justify">
             You can now easily register your Tissot watches in your Tissot
@@ -716,12 +718,12 @@
             >REGISTER NOW</a
           >
         </div>
-        <img src="./assets/img/register-watch.avif" alt="" class="w-1/2" />
+        <img src="./assets/img/register-watch.avif" alt="" class="w-full lg:w-1/2" />
       </section>
-      <section id="promotions" class="flex flex-row-reverse px-[3vw]">
-        <div class="w-1/2 self-center px-[110px]">
+      <section id="promotions" class="flex flex-col-reverse lg:flex-row-reverse px-[1vw] lg:px-[3vw]">
+        <div class="w-full lg:w-1/2 self-center px-1 lg:px-[110px]">
           <h1 class="text-[36px] font-normal">PROMOTIONS</h1>
-          <p class="text-lg font-light mt-4 text-justify">
+          <p class="text-lg font-light mt-4 lg:text-justify">
             Enter for a chance to win exciting prizes such as Special Collection
             watches, NBA Game Tickets, Official Autographed Merchandise from
             your favorite athletes and trips to the NBA's biggest events
@@ -734,23 +736,23 @@
             >ENTER NOW</a
           >
         </div>
-        <img src="./assets/img/promotions.avif" alt="" class="w-1/2" />
+        <img src="./assets/img/promotions.avif" alt="" class="w-full lg:w-1/2" />
       </section>
       <section id="top-trending" class="relative mt-[90px] px-[3vw]">
         <h1 class="text-[40px] font-light text-center mb-[35px]">
           TOP TRENDING
         </h1>
 
-        <div id="trending-list-div" class="relative my-16 overflow-hidden">
+        <div id="trending-list-div" class="relative my-16 overflow-x-scroll md:overflow-hidden">
           <button
             id="trending-left-button"
-            class="bg-red-600 p-1 rounded-full absolute top-[40%] z-10 hover:scale-110 transition-all ml-2 w-8 h-8"
+            class="bg-red-600 p-1 rounded-full hidden md:inline absolute top-[40%] z-10 hover:scale-110 transition-all ml-2 w-8 h-8"
           >
             <img src="assets/img/left_arrow.svg" alt="" class="w-full h-full" />
           </button>
           <button
             id="trending-right-button"
-            class="bg-red-600 p-1 rounded-full absolute top-[40%] left-[100%] -translate-x-[120%] z-10 hover:scale-110 transition-all mr-2 w-8 h-8"
+            class="bg-red-600 p-1 rounded-full hidden md:inline absolute top-[40%] left-[100%] -translate-x-[120%] z-10 hover:scale-110 transition-all mr-2 w-8 h-8"
           >
             <img
               src="assets/img/right_arrow.svg"
@@ -760,7 +762,7 @@
           </button>
           <ul id="trending-list" class="flex flex-row transition-all">
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href="">
                 <div class="bg-slate-100 w-full overflow-hidden">
@@ -788,7 +790,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -816,7 +818,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -844,7 +846,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -872,7 +874,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -900,7 +902,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -928,7 +930,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -956,7 +958,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -984,7 +986,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -1012,7 +1014,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -1040,7 +1042,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -1068,7 +1070,7 @@
               </a>
             </li>
             <li
-              class="min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
+              class="min-w-full md:min-w-[calc(-10px+23.5vw)] mr-[10px] text-center group trending-watch"
             >
               <a href=""
                 ><div class="bg-slate-100 w-full overflow-hidden">
@@ -1104,7 +1106,7 @@
         >
       </section>
       <section id="latest-news" class="px-[3vw] my-[90px]">
-        <div class="flex flex-row justify-evenly">
+        <div class="flex flex-col lg:flex-row justify-evenly">
           <article class="w-full px-1 group">
             <a href="">
               <div class="w-full h-1/2 overflow-hidden">
@@ -1198,12 +1200,12 @@
         </div>
         <a
           href="#"
-          class="text-white rounded-full bg-red-600 max-w-[400px] block text-center mx-auto py-4 hover:bg-gray-800 transition-colors duration-300 mt-24 2xl:mt-0"
+          class="text-white rounded-full bg-red-600 max-w-[400px] block text-center mx-auto py-4 hover:bg-gray-800 transition-colors duration-300 mt-36 2xl:mt-0"
           >VIEW ALL NEWS</a
         >
       </section>
-      <section id="more-information" class="flex flex-row">
-        <div class="relative w-1/2">
+      <section id="more-information" class="flex flex-col lg:flex-row">
+        <div class="relative w-full lg:w-1/2">
           <img
             src="./assets/img/store-locator-info.avif"
             alt=""
@@ -1212,17 +1214,17 @@
           <div
             class="absolute w-full h-full top-0 left-0 text-center flex flex-col justify-center"
           >
-            <h2 class="w-full block text-[40px] font-light mb-[35px]">
+            <h2 class="w-full block text-[20px] lg:text-[40px] font-light mb-[35px]">
               STORE LOCATOR
             </h2>
             <a
               href="#"
-              class="text-white rounded-full bg-red-600 px-16 py-4 w-full block max-w-[400px] mx-auto hover:bg-gray-800 transition-colors duration-300"
+              class="text-white rounded-full bg-red-600 px-1 lg:px-16 py-4 w-full block max-w-[400px] mx-auto hover:bg-gray-800 transition-colors duration-300"
               >FIND STORES</a
             >
           </div>
         </div>
-        <div class="relative w-1/2">
+        <div class="relative w-full lg:w-1/2">
           <img
             src="./assets/img/customer-service.avif"
             alt=""
@@ -1232,13 +1234,13 @@
             class="absolute w-full h-full top-0 left-0 text-center flex flex-col justify-center"
           >
             <h2
-              class="w-full block text-[40px] font-light mb-[35px] text-white"
+              class="w-full block text-[20px] lg:text-[40px] font-light mb-[35px] text-white"
             >
               CUSTOMER SERVICE
             </h2>
             <a
               href="#"
-              class="text-white rounded-full bg-red-600 px-16 py-4 w-full block max-w-[400px] mx-auto hover:bg-gray-800 transition-colors duration-300"
+              class="text-white rounded-full bg-red-600 px-1 lg:px-16 py-4 w-full block max-w-[400px] mx-auto hover:bg-gray-800 transition-colors duration-300"
               >FIND OUT MORE</a
             >
           </div>
@@ -1246,30 +1248,30 @@
       </section>
       <section id="quick-links">
         <div
-          class="flex flex-row justify-around py-[25px] px-[3vw] font-medium tracking-wider"
+          class="flex flex-col lg:flex-row justify-around py-[25px] px-[3vw] font-medium tracking-wider"
         >
-          <a href="" class="hover:text-red-600 transition-colors duration-300"
+          <a href="" class="hover:text-red-600 transition-colors duration-300 text-center mb-4"
             ><img
               src="assets/img/returns.svg"
               alt=""
               class="w-8 mx-auto mb-2"
             />EASY RETURNS</a
           >
-          <a href="" class="hover:text-red-600 transition-colors duration-300"
+          <a href="" class="hover:text-red-600 transition-colors duration-300 text-center mb-4"
             ><img
               src="assets/img/lock.svg"
               alt=""
               class="w-8 mx-auto mb-2"
             />SAFE & SECURE PAYMENTS</a
           >
-          <a href="" class="hover:text-red-600 transition-colors duration-300"
+          <a href="" class="hover:text-red-600 transition-colors duration-300 text-center mb-4"
             ><img
               src="assets/img/shipping.svg"
               alt=""
               class="w-8 mx-auto mb-2"
             />FREE DELIVERY</a
           >
-          <a href="" class="hover:text-red-600 transition-colors duration-300"
+          <a href="" class="hover:text-red-600 transition-colors duration-300 text-center mb-4"
             ><img
               src="assets/img/swiss_flag.svg"
               alt=""
@@ -1279,13 +1281,13 @@
         </div>
       </section>
       <section id="newsletter" class="w-full bg-[#4f4f4f] text-white py-10">
-        <h1 class="block w-full text-center text-[40px] font-light mb-4">
+        <h1 class="block w-full text-center text-[25px] sm:text-[40px] font-light mb-4">
           JOIN THE TISSOT FAMILY
         </h1>
         <p class="block w-full text-center mb-8">
           Sign up to our newsletter to receive the latest updates and offers.
         </p>
-        <div class="max-w-[750px] flex flex-row mx-auto px-[3vw]">
+        <div class="max-w-[750px] flex flex-col sm:flex-row mx-auto px-[1vw] lg:px-[3vw]">
           <input
             type="email"
             placeholder="EMAIL ADDRESS"
@@ -1293,7 +1295,7 @@
           />
           <a
             href="#"
-            class="text-white rounded-full bg-red-600 px-16 py-4 ml-6 hover:bg-gray-800 transition-colors duration-300"
+            class="text-white rounded-full bg-red-600 px-16 py-4 mt-2 sm:mt-0 text-center sm:ml-6 hover:bg-gray-800 transition-colors duration-300"
             >SUBMIT</a
           >
         </div>
@@ -1303,9 +1305,9 @@
       <img src="./assets/img/footer-logo.svg" alt="" class="mb-24 mx-auto" />
       <ul
         id="footer-summary"
-        class="flex flex-row mb-20 justify-center w-full text-center px-[5vw]"
+        class="flex flex-col sm:flex-row mb-20 justify-center w-full text-center px-[5vw]"
       >
-        <li class="w-1/2">
+        <li class="w-full sm:w-1/2 sm:mb-0 mb-8">
           <a href=""
             ><img
               src="assets/img/find_a_store.svg"
@@ -1314,7 +1316,7 @@
             />FIND A STORE</a
           >
         </li>
-        <li class="w-1/2">
+        <li class="w-full sm:w-1/2 sm:mb-0 mb-8">
           <a href=""
             ><img
               src="assets/img/corporate_gift.svg"
@@ -1323,7 +1325,7 @@
             />CORPORATE GIFT</a
           >
         </li>
-        <li class="w-1/2">
+        <li class="w-full sm:w-1/2 sm:mb-0 mb-8">
           <a href=""
             ><img
               src="assets/img/follow_us.svg"
@@ -1332,7 +1334,7 @@
             />FOLLOW US</a
           >
         </li>
-        <li class="w-1/2">
+        <li class="w-full sm:w-1/2 sm:mb-0 mb-8">
           <a href=""
             ><img
               src="assets/img/need_assistance.svg"
@@ -1345,9 +1347,9 @@
       <nav
         id="footer-nav"
         aria-label="footer nav"
-        class="flex flex-row justify-center pb-10 px-[5vw]"
+        class="flex flex-col sm:flex-row justify-center pb-10 px-[5vw]"
       >
-        <ul class="text-[.75rem] text-center w-1/4">
+        <ul class="text-[.75rem] text-center w-full sm:w-1/4 sm:mb-0 mb-8">
           <li><a href="" class="underline-animation-white">MEN</a></li>
           <li class="mt-[20px]">
             <a href="" class="underline-animation-white">WOMEN</a>
@@ -1359,7 +1361,7 @@
             <a href="" class="underline-animation-white">BRAND</a>
           </li>
         </ul>
-        <ul class="text-[.75rem] text-center w-1/4">
+        <ul class="text-[.75rem] text-center w-full sm:w-1/4 sm:mb-0 mb-8">
           <li>
             <a href="" class="underline-animation-white">STORE LOCATOR</a>
           </li>
@@ -1373,7 +1375,7 @@
             <a href="" class="underline-animation-white">FAQ</a>
           </li>
         </ul>
-        <ul class="text-[.75rem] text-center w-1/4">
+        <ul class="text-[.75rem] text-center w-full sm:w-1/4 sm:mb-0 mb-8">
           <li><a href="" class="underline-animation-white">STOP FAKE</a></li>
           <li class="mt-[20px]">
             <a href="" class="underline-animation-white">STRAPS</a>
@@ -1385,7 +1387,7 @@
             <a href="" class="underline-animation-white">PRESS LOUNGE</a>
           </li>
         </ul>
-        <ul class="text-[.75rem] text-center w-1/4">
+        <ul class="text-[.75rem] text-center w-full sm:w-1/4 sm:mb-0 mb-8">
           <li>
             <a href="" class="underline-animation-white">PRIVACY NOTICE</a>
           </li>
